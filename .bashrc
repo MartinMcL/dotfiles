@@ -44,5 +44,8 @@ function parse_git_dirty {
 		echo ""
 	fi
 }
-
 export PS1="[\[\e[32m\]\A\[\e[m\]] \[\e[33m\]\u\[\e[m\]@\[\e[35m\]\h\[\e[m\]:\[\e[36m\]\W\[\e[m\]:\[\e[30;47m\]\`parse_git_branch\`\[\e[m\] "
+alias hd="cd /mnt/c/Users/Marty"
+alias frank="cd /mnt/c/Users/Marty/frankli/web"
+export EDITOR='vim'
+export VISUAL='vim'
