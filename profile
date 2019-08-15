@@ -1,6 +1,5 @@
 set-alias c clear
 set-alias e explorer
-set-alias livetwitch 'livestreamer --% --twitch-oauth-token 2vgxk0na1qnudrt44cfvm4t8yspttb'
 
 Import-Module posh-git
 $GitPromptSettings.DefaultPromptSuffix = '`n$(''>'' * ($nestedPromptLevel + 1)) '
@@ -32,7 +31,6 @@ function ngServeMockServer {
 }
 Set-Alias frankli-mock ngServeMockServerset-alias c clear
 set-alias e explorer
-set-alias livetwitch 'livestreamer --% --twitch-oauth-token 2vgxk0na1qnudrt44cfvm4t8yspttb'
 
 Import-Module posh-git
 $GitPromptSettings.DefaultPromptSuffix = '`n$(''>'' * ($nestedPromptLevel + 1)) '
