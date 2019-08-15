@@ -1,7 +1,5 @@
 set number
 
-colorscheme elflord
-
 imap jk <Esc>
 
 set history=500
