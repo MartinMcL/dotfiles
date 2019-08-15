@@ -44,8 +44,23 @@ function parse_git_dirty {
 		echo ""
 	fi
 }
-export PS1="[\[\e[32m\]\A\[\e[m\]] \[\e[33m\]\u\[\e[m\]@\[\e[35m\]\h\[\e[m\]:\[\e[36m\]\W\[\e[m\]:\[\e[30;47m\]\`parse_git_branch\`\[\e[m\] "
-alias hd="cd /mnt/c/Users/Marty"
-alias frank="cd /mnt/c/Users/Marty/frankli/web"
+
+export PS1="[\[\e[33m\]\A\[\e[m\]] \[\e[36m\]\W\[\e[m\] \[\e[32m\]\`parse_git_branch\`\[\e[m\] \n\\$ "
+alias frank="cd ~/dev/frankli/web"
 export EDITOR='vim'
 export VISUAL='vim'
+alias frankli-up="cd ~/dev/frankli/web/backend && mvn spring-boot:run"
+alias frankli-clean="cd ~/dev/frankli/web && mvn clean install -DskipTests -T4"
+alias frankli-clean-test="cd ~/dev/frankli/web && mvn clean install -T4"
+alias frankli-mock="cd ~/dev/frankli/web/frontend/src/main/mockServer && npm start"
+alias frankli-git="cd ~/dev/frankli/web/ && git pull"
+alias frankli-front="cd ~/dev/frankli/web/frontend/src/main/frontend && npm start"
+PATH=$PATH:/opt/ngrok:~/.local/bin
+export PATH
+alias ytdl='youtube-dl'
+alias ytmp3='youtube-dl --extract-audio --audio-format mp3 --output "%(title)s.%(ext)s"'
+alias c='clear'
+alias :q='exit'
+alias gush='git push'
+alias gull='git pull'
+alias geset='git reset --hard'
